@@ -1,3 +1,7 @@
 dash>=2.14.0
-paho-mqtt>=1.6.1
+dash-bootstrap-components
+pandas
+requests
 gunicorn>=21.2.0
+plotly
+paho-mqtt>=1.6.1
