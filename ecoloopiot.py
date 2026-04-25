@@ -56,7 +56,8 @@ def _normalize_df(df):
         df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce") \
                             .dt.strftime("%Y-%m-%d %H:%M:%S")
     return df
-
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+server = app.server  # Render uses this variable via Gunicorn
 # =====================================================
 # DATA HELPERS
 # =====================================================
